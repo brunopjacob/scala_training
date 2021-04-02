@@ -1,4 +1,4 @@
-class MyClass (private val name: String, private val age: Int) /* primary constructor */ {
+class simpleClassPrivate (private val name: String, private val age: Int) /* primary constructor */ {
 
   // auxiliary constructor
   def test(): Unit = {
@@ -6,14 +6,15 @@ class MyClass (private val name: String, private val age: Int) /* primary constr
   }
 }
 
-object TestMyClass{
+object testSimpleClass{
   def main(args: Array[String]): Unit = {
 
     // creates instance of MyClass (variable m)
-    val m = new MyClass(name="Test",age=18)
+    val m = new simpleClassPrivate(name="Test",age=18)
 
     // calls test() method of instance m
     m.test()
+
 
   }
 }
